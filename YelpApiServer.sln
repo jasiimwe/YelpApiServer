@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer", "YelpApiServer\YelpApiServer.csproj", "{F9D94D02-970C-4C0F-9949-09E5E50EAA3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer.Core", "Core\YelpApiServer.Core.csproj", "{0EAEBF44-6428-435C-8C73-1EC5AE444842}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer.Services", "Services\YelpApiServer.Services.csproj", "{9739D2FC-F671-495A-94C0-ED2BACAE9943}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer.Test", "YelpApiServer.Test\YelpApiServer.Test.csproj", "{9F247717-A5C6-4E42-AF2D-ECB30A390FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YelpApiServer.Connection", "YelpApiServer.Connection\YelpApiServer.Connection.csproj", "{46D33CE2-6F1A-495A-87A5-0A6129243547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9D94D02-970C-4C0F-9949-09E5E50EAA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D94D02-970C-4C0F-9949-09E5E50EAA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D94D02-970C-4C0F-9949-09E5E50EAA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D94D02-970C-4C0F-9949-09E5E50EAA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAEBF44-6428-435C-8C73-1EC5AE444842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAEBF44-6428-435C-8C73-1EC5AE444842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAEBF44-6428-435C-8C73-1EC5AE444842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAEBF44-6428-435C-8C73-1EC5AE444842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F247717-A5C6-4E42-AF2D-ECB30A390FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F247717-A5C6-4E42-AF2D-ECB30A390FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F247717-A5C6-4E42-AF2D-ECB30A390FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F247717-A5C6-4E42-AF2D-ECB30A390FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A068DA6-1811-4A1F-90AF-5B3B92AEFFB5}
+	EndGlobalSection
+EndGlobal
