@@ -2,8 +2,8 @@
 using System.Text.Json;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
-using YelpApiServer.Connection.Extensions;
 using YelpApiServer.Core.Models;
+using YelpApiServer.Services.Extensions;
 using YelpApiServer.Services.IServices;
 
 namespace YelpApiServer.Services.Services

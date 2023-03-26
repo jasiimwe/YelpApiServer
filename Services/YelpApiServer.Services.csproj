@@ -14,7 +14,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core\YelpApiServer.Core.csproj" />
-    <ProjectReference Include="..\YelpApiServer.Connection\YelpApiServer.Connection.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
 </Project>

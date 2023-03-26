@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer.Core", "Core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YelpApiServer.Services", "Services\YelpApiServer.Services.csproj", "{9739D2FC-F671-495A-94C0-ED2BACAE9943}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YelpApiServer.Connection", "YelpApiServer.Connection\YelpApiServer.Connection.csproj", "{46D33CE2-6F1A-495A-87A5-0A6129243547}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YelpServerTests", "YelpServerTests\YelpServerTests.csproj", "{A2AC86E2-076F-4BFD-9394-A0F32D1FEA99}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9739D2FC-F671-495A-94C0-ED2BACAE9943}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46D33CE2-6F1A-495A-87A5-0A6129243547}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2AC86E2-076F-4BFD-9394-A0F32D1FEA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2AC86E2-076F-4BFD-9394-A0F32D1FEA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2AC86E2-076F-4BFD-9394-A0F32D1FEA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
