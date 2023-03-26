@@ -9,6 +9,8 @@ namespace YelpApiServer.Services.IServices
 {
     public interface IRestaurantSearchService
     {
-        Task<RestaurantSearch> SearchRestaurants(string location, string term);
+        Task<ApiResponse<RestaurantSearch>> SearchRestaurantsAsync(string location, string term);
+
+        Task<ApiResponse<RestaurantSearchById>> SearchRestaurantByIdAsync(string Id);
     }
 }

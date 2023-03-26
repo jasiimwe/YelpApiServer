@@ -1,3 +1,5 @@
+using MonkeyCache;
+using MonkeyCache.FileStore;
 using YelpApiServer.Services.IServices;
 using YelpApiServer.Services.Services;
 
@@ -5,7 +7,6 @@ using YelpApiServer.Services.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IRestaurantSearchService, RestaurantSearchService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -13,6 +14,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRestaurantSearchService, RestaurantSearchService>();
+builder.Services.AddHttpClient<IBaseRestService, BaseRestService>();
+
 
 var app = builder.Build();
 

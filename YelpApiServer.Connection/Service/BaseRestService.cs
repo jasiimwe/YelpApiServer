@@ -14,12 +14,12 @@ namespace YelpApiServer.Connection.Service
 
 
         private HttpClient _client;
-        private IBarrel _cacheBarrel;
+        //private IBarrel _cacheBarrel;
 
 
-        public BaseRestService(IBarrel cacheBarrel)
+        public BaseRestService()
         {
-            this._cacheBarrel = cacheBarrel;
+            //this._cacheBarrel = cacheBarrel;
         }
 
         protected void SetBaseURL(string apiBaseUrl)
@@ -52,8 +52,11 @@ namespace YelpApiServer.Connection.Service
         {
 
             var cleanCacheKey = resource.CleanCacheKey();
+            string json = string.Empty;
+
 
             //check cache if enabled
+            /*
             if (_cacheBarrel is not null)
             {
                 //Get data from cache
@@ -67,6 +70,7 @@ namespace YelpApiServer.Connection.Service
 
 
             }
+            */
 
             //no cache, or not required and server is available
 
@@ -74,12 +78,16 @@ namespace YelpApiServer.Connection.Service
             var response = await _client.GetAsync(new Uri(_client.BaseAddress, resource));
 
             //check for valid response
-            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode)
+            {
+                //read response
+                json = await response.Content.ReadAsStringAsync();
+            };
 
-            //read response
-            string json = await response.Content.ReadAsStringAsync();
+            
 
             //Save to Cache if required
+            /*
             if (cacheDuration > 0 && _cacheBarrel is not null)
             {
                 try
@@ -89,7 +97,7 @@ namespace YelpApiServer.Connection.Service
                 catch
                 { }
             }
-
+            */
             return json;
         }
     

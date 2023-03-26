@@ -10,6 +10,13 @@ namespace YelpApiServer.Core.Models
 
     public class RestaurantSearch
     {
+        [JsonPropertyName("businesses")]
+        public List<Business> businesses { get; set; }
+    }
+
+
+    public class Business
+    {
         [JsonPropertyName("id")]
         public string Id { get; set; }
 
